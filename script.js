@@ -85,3 +85,36 @@ function downloadSelected() {
     });
   });
 }
+
+function generateCPP() {
+  const fileInput = document.getElementById("quoteUpload");
+  const file = fileInput.files[0];
+
+  if (!file) {
+    alert("Please upload a quote file first.");
+    return;
+  }
+
+  const formData = new FormData();
+  formData.append("quote", file);
+
+  fetch("https://rams-cpp-backend.onrender.com/generate-cpp", {
+    method: "POST",
+    body: formData
+  })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Failed to generate CPP document.");
+      }
+      return response.blob();
+    })
+    .then(blob => {
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "CPP_Filled.docx";
+      a.click();
+    })
+    .catch(error => {
+      alert("Error: " + error.message);
+    });
+}

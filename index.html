@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>RAMS & CPP Generator</title>
+    <meta charset="UTF-8">
+    <title>RAMS & CPP Generator</title>
 </head>
 <body>
-  <h1>RAMS & CPP Auto Generator</h1>
-  <input type="file" id="quoteUpload" accept=".xlsx" />
-  <button onclick="processQuote()">Process Quote</button>
-  <div id="results"></div>
-
-  <!-- ✅ Add this download button -->
-  <button onclick="downloadSelected()" style="margin-top:20px;">Download Selected RAMS as ZIP</button>
-
-  <script src="xlsx.full.min.js"></script>
-  <script src="jszip.min.js"></script>
-  <script src="script.js"></script>
+    <h1>RAMS & CPP Auto Generator</h1>
+    <input type="file" id="quoteUpload" accept=".xlsx"/>
+    <button onclick="processQuote()">Process Quote</button>
+    <button onclick="generateCPP()">Download CPP</button>
+    <div id="results"></div>
+    <button onclick="downloadSelected()">Download Selected RAMS as ZIP</button>
+    <script src="xlsx.full.min.js"></script>
+    <script src="jszip.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
