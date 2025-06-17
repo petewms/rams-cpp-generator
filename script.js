@@ -11,7 +11,7 @@ function processQuote() {
 
     resultsDiv.innerHTML = "<p>📂 File selected: " + file.name + "<br>Reading file... please wait.</p>";
 
-    const mapping = {'411316': {'description': 'Repair to roof tiles', 'suggested_rams': 'Roof Leaks Repair to tiles.docx'}, '450001': {'description': 'Decorating works', 'suggested_rams': 'Internal Decoration Procedure.docx'}};
+    const mapping = {'411316': {'description': 'Repair to roof tiles', 'suggested_rams': 'Roof Leaks Repair to tiles.pdf'}, '450001': {'description': 'Decorating works', 'suggested_rams': 'Internal Decoration Procedure.pdf'}};
 
     const reader = new FileReader();
     reader.onload = function(e) {
