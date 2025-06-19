@@ -1,12 +1,32 @@
 {
-  "450001": {
-    "category": "Decorating",
-    "description": "Decorating works",
-    "suggested_rams": "Internal Decoration Procedure.pdf"
-  },
   "411316": {
     "category": "Roofing",
     "description": "Repair to roof tiles",
     "suggested_rams": "Roof Leaks Repair to tiles.pdf"
+  },
+  "411317": {
+    "category": "Roofing",
+    "description": "Replace roof felt",
+    "suggested_rams": "Roof Leaks Repair to tiles.pdf"
+  },
+  "331001": {
+    "category": "Plumbing",
+    "description": "Tap replacement",
+    "suggested_rams": "Plumbing Works.pdf"
+  },
+  "331002": {
+    "category": "Plumbing",
+    "description": "Pipe leak repair",
+    "suggested_rams": "Plumbing Works.pdf"
+  },
+  "450001": {
+    "category": "Decorating",
+    "description": "Internal redecoration",
+    "suggested_rams": "Internal Decoration Procedure.pdf"
+  },
+  "450002": {
+    "category": "Decorating",
+    "description": "External painting",
+    "suggested_rams": "Internal Decoration Procedure.pdf"
   }
 }
